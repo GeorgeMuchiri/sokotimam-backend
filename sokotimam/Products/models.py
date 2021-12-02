@@ -27,7 +27,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.IntegerField()
     product_uuid = models.CharField(max_length=250, null=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    #category = models.ForeignKey(Category, on_delete=models.CASCADE)
     subcategory  = models.ForeignKey(Subcategory, on_delete=models.CASCADE)
     image = models.ImageField(upload_to="./images/", default="./images/default_image.png")
 

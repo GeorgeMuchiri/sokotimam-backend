@@ -1,0 +1,28 @@
+.header{
+    height: 130px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+.header__one{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+}
+
+.header__logo{
+    
+    width: 100px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.header__search{
+    margin-left: 20px;
+    flex:1;
+}
+
+.header__two{
+    width: 100vw;
+    height: 50px;
+}

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'products',
     'graphene_django',
     'accounts',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
