@@ -5,7 +5,7 @@ from .models import Product, Category, Subcategory
 class ProductType(DjangoObjectType):
     class Meta:
         model = Product
-        fields = ('id', 'name', 'price', 'category', 'subcategory')
+        fields = ('id', 'name', 'price', 'category', 'description')
 
 class CategoryType(DjangoObjectType):
     class  Meta:

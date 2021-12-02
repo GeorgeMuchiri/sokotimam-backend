@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-xjcch826*3v^$j_rb2e!km9(s-)zihoiy2o$n^8%h7k-@tlq50'
+SECRET_KEY = 'django-insecure-k*arb1_5yov&y$tjnm5l2l4+1(f00m&gw@phhv)5*p_t3y(_$m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Products',
+    'users',
+    'products',
     'graphene_django',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -77,12 +79,8 @@ WSGI_APPLICATION = 'sokotimam.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'soko',
-        'USER': 'devteam',
-        'PASSWORD': '123456789',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -105,6 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'users.CustomUser'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/

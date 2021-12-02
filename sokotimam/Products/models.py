@@ -29,6 +29,7 @@ class Product(models.Model):
     product_uuid = models.CharField(max_length=250, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     subcategory  = models.ForeignKey(Subcategory, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to="./images/", default="./images/default_image.png")
 
 
     class Meta:
