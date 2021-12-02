@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'graphene_django',
     'accounts',
     'django_extensions',
+    'cart',
 ]
 
 MIDDLEWARE = [
