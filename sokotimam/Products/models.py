@@ -4,6 +4,7 @@ from django.db import models
 
 class Category(models.Model):
     name  = models.CharField(max_length=250)
+    img = models.ImageField(upload_to='./images/', default="./images/default_image.png")
 
     class Meta:
         verbose_name_plural = 'Categories'
@@ -14,6 +15,7 @@ class Category(models.Model):
 class Subcategory(models.Model):
     Category = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=250)
+    
 
     class Meta:
         verbose_name_plural = 'Subcategories'
@@ -29,7 +31,7 @@ class Product(models.Model):
     product_uuid = models.CharField(max_length=250, null=True)
     #category = models.ForeignKey(Category, on_delete=models.CASCADE)
     subcategory  = models.ForeignKey(Subcategory, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to="./images/", default="./images/default_image.png")
+    image = models.ImageField(upload_to="./images", default="./images/default_image.png")
 
 
     class Meta:

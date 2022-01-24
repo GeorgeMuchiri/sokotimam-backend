@@ -1,0 +1,128 @@
+.Account_Container{
+    width: 1100px;
+    height: 700px;
+    
+    margin:10px 200px auto;
+    display: flex;
+}
+
+.Account_Left{
+    height: 500px;
+    width: 200px;
+    display: block;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.Account_Overview{
+    height: 500px;
+    width: 900px;
+    border-radius: 15px 15px 0 0;
+    margin-left: 30px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.Acc_Profile{
+    height: 100px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+    margin-bottom: 5px;
+
+}
+
+
+
+.Acc_Profile > img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 3px solid #C53C27;
+    margin: 10px 70px auto;
+    border-radius: 50px;
+}
+
+.Acc_Profile > h4 {
+    text-align: center;
+}
+
+.Acc_Title{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+    height: 40px;
+    border-radius: 15px 15px 0 0;
+}
+
+.Acc_Title > h4 {
+    
+    margin-left: 20px;
+    padding: 10px;
+}
+.Acc_Title > h5 {
+    
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.Acc_Side{
+    height: 40px;
+    margin-bottom: 10px;
+    /* border: 0.5px solid black; */
+    display: flex;
+}
+
+.Acc_Side > img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.Acc_Side > p{
+    padding: 10px;
+    font-weight: 200;
+}
+
+.Acc_Side:hover{
+    background-color: #C53C27;
+    color: white;
+}
+
+.Acc_Contents{
+    width: 250px;
+    height: 120px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 15px 15px 0 0;
+}
+
+._Name{
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+._Email{
+    font-size: 12px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+._Edit{
+    color: #C53C27;
+    margin-left: 190px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Acc_Container{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+
+}
+
+.Store_Name{
+    font-size: 18px;
+    font-weight: bold;
+    color:blue;
+    margin-left: 10px;
+    margin-top: 15px;
+}
