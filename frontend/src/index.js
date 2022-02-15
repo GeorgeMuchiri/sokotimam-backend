@@ -11,6 +11,9 @@ import Cart from './components/Cart'
 import Search from './components/Search';
 import Product from './components/Product';
 import Account from './components/Account';
+import Dash from './components/Dash';
+import Merchant from './components/Merchant';
+import Inventory from './components/Inventory';
 
 const apiclient = new ApolloClient({
   uri: 'http://127.0.0.1:8000/graphql',
@@ -31,6 +34,9 @@ ReactDOM.render(
         <Route path="/search" element={<Search />} />
         <Route path="/account" element={<Account />}/>
         <Route path="/product" element={<Product />}/>
+        <Route path="/dashboard" element={<Dash />} />
+        <Route path="/merchant" element={<Merchant />} />
+        <Route path="/inventory" element={<Inventory />} />
       </Routes>
     </Router>
     </ApolloProvider>

@@ -37,7 +37,8 @@ function Header() {
     
     
 
-    
+   
+
     const [search, setSearch] = useState("")
     const  {data} = useQuery(SEARCH_QUERY,{
         variables: {name:  search},
@@ -69,7 +70,7 @@ function Header() {
                     <div className="cart">
                         <ShoppingCartOutlinedIcon className="" />
                         <Link to="/cart" className="cart_name">Cart</Link>
-                        <span>8</span>
+                        <span>2</span>
                     </div>
                     <div className="account">
                         <PermIdentityOutlinedIcon className="account_icon" />

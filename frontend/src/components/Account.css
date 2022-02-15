@@ -65,6 +65,7 @@
     margin-bottom: 10px;
     /* border: 0.5px solid black; */
     display: flex;
+    
 }
 
 .Acc_Side > img{
@@ -82,6 +83,7 @@
 .Acc_Side:hover{
     background-color: #C53C27;
     color: white;
+    cursor: pointer;
 }
 
 .Acc_Contents{
