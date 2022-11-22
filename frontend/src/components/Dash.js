@@ -25,7 +25,7 @@ function Dash() {
                     <h5>Handcraft Africa Ltd</h5>
                 </div>
                 <div className='Acc_Side'>
-                    <img src={dash}  className='' alt=''></img>
+                    <img src=''  className='' alt=''></img>
                     <p className='Acc_Label'>Dashboard</p>
                 </div>
                 <div className='Acc_Side'>

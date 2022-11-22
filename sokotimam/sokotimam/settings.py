@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'users',
     'products',
     'graphene_django',
-    'accounts',
+    #'accounts',
     'django_extensions',
-    'cart',
+    #'cart',
     'corsheaders',
 ]
 
@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = 'users.CustomUser'
+AUTH_USER_MODEL = 'users.NewUser'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -142,3 +142,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'images')
 MEDIA_URL = '/images/'
+
+
+
+GRAPHENE = {
+    'SCHEMA': 'sokotimam.schema.schema',
+    'MIDDLEWARE': [
+        'graphql_jwt.middleware.JSONWebTokenMiddleware',
+    ],
+}

@@ -4,6 +4,8 @@ import Footer from './Footers'
 import './Cart.css'
 import downribbon from './images/Repeatgrid_3.png'
 import upperribbon from './images/RepeatG2.png'
+import image_1 from './images/image_1.jpg';
+
 
 import { Link } from 'react-router-dom';
 
@@ -24,25 +26,25 @@ function Cart() {
                             <h6>TOTAL</h6>
                     </div>
                     <div className='cart_prod'>
-                            <img src='' alt=''></img>
+                            <img src={image_1} alt=''></img>
                             <p>KES 1500</p>
                            <p> <span className='span__'> - </span> 1 <spa className='span_'>+</spa></p>
                             <p>KES 1500</p>
                     </div>
                     <div className='cart_prod'>
-                            <img src='' alt=''></img>
+                            <img src={image_1} alt=''></img>
                             <p>KES 1500</p>
                             <p> <span className='span__'> - </span> 1 <span className='span_'> + </span></p>
                             <p>KES 1500</p>
                     </div>
                     <div className='cart_prod'>
-                            <img src='' alt=''></img>
+                            <img src={image_1} alt=''></img>
                             <p>KES 1500</p>
                             <p> <span className='span__'> - </span> 1 <span className='span_'> + </span></p>
                             <p>KES 1500</p>
                     </div>
                     <div className='cart_prod'>
-                            <img src='' alt=''></img>
+                            <img src={image_1} alt=''></img>
                             <p>KES 1500</p>
                             <p> <span className='span__'> - </span> 1 <span className='span_'> + </span></p>
                             <p>KES 1500</p>

@@ -4,7 +4,7 @@ import Footers from './Footers'
 import './Merchant.css'
 import './Dash.css'
 import './Inventory.css'
-import dash from './images/dash.svg'
+//import dash from './images/dash.svg'
 import customers from './images/customers.svg'
 import inventory from './images/inventory.svg'
 import reviews from './images/reviews.svg'
@@ -21,7 +21,7 @@ function Inventory() {
                     <h5>Handcraft Africa Ltd</h5>
                 </div>
                 <div className='Acc_Side'>
-                    <img src={dash}  className='' alt=''></img>
+                    <img src=''  className='' alt=''></img>
                     <p className='Acc_Label'>Dashboard</p>
                 </div>
                 <div className='Acc_Side'>
